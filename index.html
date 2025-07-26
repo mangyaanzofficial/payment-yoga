@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Payment - DANA & QRIS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+  <source src="https://files.catbox.moe/c9220i.mp3" type="audio/mp3">
+  Browser tidak mendukung audio.
+</audio>
+  <!-- Container utama -->
+  <div class="container">
+    <h1 class="main-title">🌐All Payment By Yoga Official</h1>
+
+    <!-- Kartu DANA -->
+    <div class="card glass">
+      <h2>DANA</h2>
+      <p>Nomor: <span class="highlight">089508614429</span></p>
+      <p>A/N: <span class="highlight">FATIMA</span></p>
+      <p>NOTE: <span class="highlight">JANGAN LUPA KIRIM BUKTI TRX!</span></p>
+      <button onclick="copyToClipboard('089508614429')">📋 Salin Nomor</button>
+    </div>
+
+    <!-- Kartu QRIS -->
+    <div class="card glass">
+      <h2>QRIS ALL PAY</h2>
+      <p>NOTE: <span class="highlight">SCAN QR DI ATAS DAN JANGAN LUPA KIRIM BUKTI TF!</span></p>
+      <img src="https://files.catbox.moe/0qwo3e.jpg" alt="Kode QRIS" class="qris-img" />
+      <button onclick="downloadQRIS()">⬇️ Download QRIS</button>
+    </div>
+  </div>
+  <footer>© 2025 - Website Ini Dibuat Oleh Yoga Official🕊</footer>
+
+  <script src="script.js"></script>
+  <div id="toast" class="toast">✅ Nomor Dana berhasil disalin!</div>
+</body>
+</html>
